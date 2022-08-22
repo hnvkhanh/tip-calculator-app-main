@@ -12,15 +12,17 @@ body{
     margin: 10% auto;
 }
 
-.form-label{
+.input-label{
     color: $Dark-grayish-cyan;
     font-size: 60%;
 }
 
 .form-control{
-    background-color: $Very-light-grayish-cyan;
-    border: none;
-    color: $Very-dark-cyan;        
+    background-color: $Very-light-grayish-cyan !important;
+    border-color: $Very-light-grayish-cyan;
+    color: $Very-dark-cyan;   
+    background: url("../images/icon-dollar.svg") no-repeat left;
+    background-position: 5%;        
 
     &::placeholder{
         color: $Grayish-cyan;           
@@ -29,16 +31,33 @@ body{
     &:focus{
         background-color: $Very-light-grayish-cyan;        
         box-shadow: none;
+        border: 2px solid;
+        border-color: $Strong-cyan;         
     }
-}
-
-.add-on{
-    color: $Grayish-cyan;
-    background-color: $Very-light-grayish-cyan;
-    border: none;
 }
 
 .calculator{
     background-color: $White;
     border-radius: 20px;
+}
+
+.btn{
+    width: 100%;
+    background-color: $Very-dark-cyan;
+    border-color: $Very-dark-cyan;
+    color: $White;
+    
+    &:focus{
+        background-color: $Strong-cyan;
+        color: $Very-dark-cyan;
+        box-shadow: none;
+        border-color: $Strong-cyan;
+    }
+
+    // &:hover{
+    //     background-color: $Light-grayish-cyan;
+    //     color: $Very-dark-cyan;
+    //     border: $Light-grayish-cyan;        
+    // }
+    
 }

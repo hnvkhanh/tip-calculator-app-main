@@ -10,15 +10,17 @@ body {
   margin: 10% auto;
 }
 
-.form-label {
+.input-label {
   color: hsl(186deg, 14%, 43%);
   font-size: 60%;
 }
 
 .form-control {
-  background-color: hsl(189deg, 41%, 97%);
-  border: none;
+  background-color: hsl(189deg, 41%, 97%) !important;
+  border-color: hsl(189deg, 41%, 97%);
   color: hsl(183deg, 100%, 15%);
+  background: url("../images/icon-dollar.svg") no-repeat left;
+  background-position: 5%;
 }
 .form-control::-moz-placeholder {
   color: hsl(184deg, 14%, 56%);
@@ -32,15 +34,24 @@ body {
 .form-control:focus {
   background-color: hsl(189deg, 41%, 97%);
   box-shadow: none;
-}
-
-.add-on {
-  color: hsl(184deg, 14%, 56%);
-  background-color: hsl(189deg, 41%, 97%);
-  border: none;
+  border: 2px solid;
+  border-color: hsl(172deg, 67%, 45%);
 }
 
 .calculator {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 20px;
+}
+
+.btn {
+  width: 100%;
+  background-color: hsl(183deg, 100%, 15%);
+  border-color: hsl(183deg, 100%, 15%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn:focus {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+  box-shadow: none;
+  border-color: hsl(172deg, 67%, 45%);
 }/*# sourceMappingURL=styles.css.map */
