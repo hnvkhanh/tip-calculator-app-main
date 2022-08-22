@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+@import 'variables';
+
+body{
+    font-family: $font-family;
+    color: $White;   
+    background-color: $Light-grayish-cyan; 
+    font-size: $font-size;
+}
+
+.logo{
+    margin: 10% auto;
+}
+
+.form-label{
+    color: $Dark-grayish-cyan;
+    font-size: 60%;
+}
+
+.form-control{
+    background-color: $Very-light-grayish-cyan;
+    border: none;
+    color: $Very-dark-cyan;        
+
+    &::placeholder{
+        color: $Grayish-cyan;           
+    }
+
+    &:focus{
+        background-color: $Very-light-grayish-cyan;        
+        box-shadow: none;
+    }
+}
+
+.add-on{
+    color: $Grayish-cyan;
+    background-color: $Very-light-grayish-cyan;
+    border: none;
+}
+
+.calculator{
+    background-color: $White;
+    border-radius: 20px;
+}

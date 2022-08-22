@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+body {
+  font-family: "Space Mono", monospace;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 41%, 84%);
+  font-size: 24px;
+}
+
+.logo {
+  margin: 10% auto;
+}
+
+.form-label {
+  color: hsl(186deg, 14%, 43%);
+  font-size: 60%;
+}
+
+.form-control {
+  background-color: hsl(189deg, 41%, 97%);
+  border: none;
+  color: hsl(183deg, 100%, 15%);
+}
+.form-control::-moz-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.form-control:-ms-input-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.form-control::placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.form-control:focus {
+  background-color: hsl(189deg, 41%, 97%);
+  box-shadow: none;
+}
+
+.add-on {
+  color: hsl(184deg, 14%, 56%);
+  background-color: hsl(189deg, 41%, 97%);
+  border: none;
+}
+
+.calculator {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+}/*# sourceMappingURL=styles.css.map */
