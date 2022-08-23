@@ -96,6 +96,10 @@ body{
     & .btn{
         background-color: $Strong-cyan;
         color: $Very-dark-cyan;
+
+        &:hover{
+            background-color: $Light-grayish-cyan;
+        }
     }
     
 }

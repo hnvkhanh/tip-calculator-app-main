@@ -88,6 +88,9 @@ body {
   background-color: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
 }
+.result .btn:hover {
+  background-color: hsl(185deg, 41%, 84%);
+}
 
 .unit {
   color: hsl(184deg, 14%, 56%);
