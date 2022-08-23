@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-  margin: 10% auto;
+  margin: 15% auto;
 }
 
 .input-label {
@@ -56,6 +56,8 @@ body {
 .calculator {
   background-color: hsl(0deg, 0%, 100%);
   border-radius: 20px;
+  margin: auto;
+  padding: 3%;
 }
 
 .btn {
@@ -74,7 +76,6 @@ body {
 .result {
   background-color: hsl(183deg, 100%, 15%);
   border-radius: 20px;
-  width: 95%;
 }
 .result .row {
   font-size: 1rem;
