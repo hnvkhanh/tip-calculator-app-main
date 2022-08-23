@@ -72,3 +72,13 @@ body{
     // }
     
 }
+
+.result{
+    background-color: $Very-dark-cyan;
+    border-radius: 20px;
+    width: 95%;
+
+    & .row{
+        font-size: 1rem;
+    }
+}

@@ -60,4 +60,13 @@ body {
   color: hsl(183deg, 100%, 15%);
   box-shadow: none;
   border-color: hsl(172deg, 67%, 45%);
+}
+
+.result {
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 20px;
+  width: 95%;
+}
+.result .row {
+  font-size: 1rem;
 }/*# sourceMappingURL=styles.css.map */
