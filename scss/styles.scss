@@ -23,7 +23,7 @@ body{
     color: $Very-dark-cyan;               
 
     &::placeholder{
-        color: $Grayish-cyan;           
+        color: $Light-grayish-cyan;           
     }
 
     &:focus{
@@ -40,6 +40,11 @@ body{
     &#num-ppl-input{    
         background: url("../images/icon-person.svg") no-repeat left;
         background-position: 5%;
+        
+    }
+
+    &#tip-percent-input::placeholder{
+        color: $Grayish-cyan;
     }
 }
 
@@ -79,6 +84,21 @@ body{
     width: 95%;
 
     & .row{
-        font-size: 1rem;
+        font-size: 1rem;    
+        
+        & div:nth-child(2){
+            font-size: 2rem;
+            color: $Strong-cyan
+        }
     }
+
+    & .btn{
+        background-color: $Strong-cyan;
+        color: $Very-dark-cyan;
+    }
+}
+
+.unit{
+    color: $Grayish-cyan;
+    margin-top: -10%;
 }

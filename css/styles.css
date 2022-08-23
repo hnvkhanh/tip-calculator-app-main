@@ -21,13 +21,13 @@ body {
   color: hsl(183deg, 100%, 15%);
 }
 .form-control::-moz-placeholder {
-  color: hsl(184deg, 14%, 56%);
+  color: hsl(185deg, 41%, 84%);
 }
 .form-control:-ms-input-placeholder {
-  color: hsl(184deg, 14%, 56%);
+  color: hsl(185deg, 41%, 84%);
 }
 .form-control::placeholder {
-  color: hsl(184deg, 14%, 56%);
+  color: hsl(185deg, 41%, 84%);
 }
 .form-control:focus {
   background-color: hsl(189deg, 41%, 97%);
@@ -42,6 +42,15 @@ body {
 .form-control#num-ppl-input {
   background: url("../images/icon-person.svg") no-repeat left;
   background-position: 5%;
+}
+.form-control#tip-percent-input::-moz-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.form-control#tip-percent-input:-ms-input-placeholder {
+  color: hsl(184deg, 14%, 56%);
+}
+.form-control#tip-percent-input::placeholder {
+  color: hsl(184deg, 14%, 56%);
 }
 
 .calculator {
@@ -69,4 +78,17 @@ body {
 }
 .result .row {
   font-size: 1rem;
+}
+.result .row div:nth-child(2) {
+  font-size: 2rem;
+  color: hsl(172deg, 67%, 45%);
+}
+.result .btn {
+  background-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
+}
+
+.unit {
+  color: hsl(184deg, 14%, 56%);
+  margin-top: -10%;
 }/*# sourceMappingURL=styles.css.map */
