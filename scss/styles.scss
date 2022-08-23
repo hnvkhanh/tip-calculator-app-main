@@ -20,9 +20,7 @@ body{
 .form-control{
     background-color: $Very-light-grayish-cyan !important;
     border-color: $Very-light-grayish-cyan;
-    color: $Very-dark-cyan;   
-    background: url("../images/icon-dollar.svg") no-repeat left;
-    background-position: 5%;        
+    color: $Very-dark-cyan;               
 
     &::placeholder{
         color: $Grayish-cyan;           
@@ -34,7 +32,20 @@ body{
         border: 2px solid;
         border-color: $Strong-cyan;         
     }
+    &#bill-input{
+        background: url("../images/icon-dollar.svg") no-repeat left;
+        background-position: 5%;
+    }
+
+    &#num-ppl-input{    
+        background: url("../images/icon-person.svg") no-repeat left;
+        background-position: 5%;
+    }
 }
+
+
+
+
 
 .calculator{
     background-color: $White;
@@ -52,7 +63,7 @@ body{
         color: $Very-dark-cyan;
         box-shadow: none;
         border-color: $Strong-cyan;
-    }
+    }    
 
     // &:hover{
     //     background-color: $Light-grayish-cyan;

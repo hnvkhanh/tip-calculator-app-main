@@ -19,8 +19,6 @@ body {
   background-color: hsl(189deg, 41%, 97%) !important;
   border-color: hsl(189deg, 41%, 97%);
   color: hsl(183deg, 100%, 15%);
-  background: url("../images/icon-dollar.svg") no-repeat left;
-  background-position: 5%;
 }
 .form-control::-moz-placeholder {
   color: hsl(184deg, 14%, 56%);
@@ -36,6 +34,14 @@ body {
   box-shadow: none;
   border: 2px solid;
   border-color: hsl(172deg, 67%, 45%);
+}
+.form-control#bill-input {
+  background: url("../images/icon-dollar.svg") no-repeat left;
+  background-position: 5%;
+}
+.form-control#num-ppl-input {
+  background: url("../images/icon-person.svg") no-repeat left;
+  background-position: 5%;
 }
 
 .calculator {
