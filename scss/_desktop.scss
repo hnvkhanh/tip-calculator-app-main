@@ -1,0 +1,38 @@
+@media (min-width: 992px) {
+    .calculator{
+        max-width: 60%;   
+        margin-bottom: 15%;     
+    }
+    .logo{
+        margin: 5% auto;
+    }
+
+    .btn{                                        
+        &:hover{
+            background-color: $Light-grayish-cyan;
+            color: $Very-dark-cyan;
+            border: $Light-grayish-cyan;                 
+        }
+        
+    }
+
+    .result{                             
+        & .row{              
+            
+            & div:nth-child(2){
+                font-size: 2.5rem;                
+            }
+           
+        }
+        & .btn{           
+          margin-top: 22%;
+          
+        }
+            
+        
+    }
+    
+    #tip-percent-input::placeholder{
+        font-size: 1.5rem;
+    }
+}

@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
 @import 'variables';
+@import 'mobile';
+@import 'desktop';
 
 body{
     font-family: $font-family;
@@ -8,103 +10,4 @@ body{
     font-size: $font-size;
 }
 
-.logo{
-    margin: 15% auto;
-}
 
-.input-label{
-    color: $Dark-grayish-cyan;
-    font-size: 60%;
-}
-
-.form-control{
-    background-color: $Very-light-grayish-cyan !important;
-    border-color: $Very-light-grayish-cyan;
-    color: $Very-dark-cyan;               
-
-    &::placeholder{
-        color: $Light-grayish-cyan;           
-    }
-
-    &:focus{
-        background-color: $Very-light-grayish-cyan;        
-        box-shadow: none;
-        border: 2px solid;
-        border-color: $Strong-cyan;         
-    }
-    &#bill-input{
-        background: url("../images/icon-dollar.svg") no-repeat left;
-        background-position: 5%;
-    }
-
-    &#num-ppl-input{    
-        background: url("../images/icon-person.svg") no-repeat left;
-        background-position: 5%;
-        
-    }
-
-    &#tip-percent-input::placeholder{
-        color: $Grayish-cyan;           
-    }
-}
-
-
-
-
-
-.calculator{
-    background-color: $White;
-    border-radius: 20px;
-    margin: auto;    
-    padding: 3%;
-}
-
-.btn{
-    width: 100%;
-    background-color: $Very-dark-cyan;
-    border-color: $Very-dark-cyan;
-    color: $White;
-    
-    &:focus{
-        background-color: $Strong-cyan;
-        color: $Very-dark-cyan;
-        box-shadow: none;
-        border-color: $Strong-cyan;
-    }    
-
-    // &:hover{
-    //     background-color: $Light-grayish-cyan;
-    //     color: $Very-dark-cyan;
-    //     border: $Light-grayish-cyan;        
-    // }
-    
-}
-
-.result{
-    background-color: $Very-dark-cyan;
-    border-radius: 20px;    
-
-    & .row{
-        font-size: 1rem;    
-        
-        & div:nth-child(2){
-            font-size: 2rem;
-            color: $Strong-cyan
-        }
-    }
-
-    & .btn{
-        background-color: $Strong-cyan;
-        color: $Very-dark-cyan;
-
-        &:hover{
-            background-color: $Light-grayish-cyan;
-        }
-    }
-    
-}
-
-.unit{
-    color: $Grayish-cyan;
-    margin-top: -10%;
-}

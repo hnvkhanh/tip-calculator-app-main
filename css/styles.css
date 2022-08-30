@@ -1,11 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
-body {
-  font-family: "Space Mono", monospace;
-  color: hsl(0deg, 0%, 100%);
-  background-color: hsl(185deg, 41%, 84%);
-  font-size: 24px;
-}
-
 .logo {
   margin: 15% auto;
 }
@@ -34,6 +27,7 @@ body {
   box-shadow: none;
   border: 2px solid;
   border-color: hsl(172deg, 67%, 45%);
+  color: hsl(183deg, 100%, 15%);
 }
 .form-control#bill-input {
   background: url("../images/icon-dollar.svg") no-repeat left;
@@ -94,5 +88,41 @@ body {
 
 .unit {
   color: hsl(184deg, 14%, 56%);
-  margin-top: -10%;
+  margin-top: -8%;
+}
+
+@media (min-width: 992px) {
+  .calculator {
+    max-width: 60%;
+    margin-bottom: 15%;
+  }
+  .logo {
+    margin: 5% auto;
+  }
+  .btn:hover {
+    background-color: hsl(185deg, 41%, 84%);
+    color: hsl(183deg, 100%, 15%);
+    border: hsl(185deg, 41%, 84%);
+  }
+  .result .row div:nth-child(2) {
+    font-size: 2.5rem;
+  }
+  .result .btn {
+    margin-top: 22%;
+  }
+  #tip-percent-input::-moz-placeholder {
+    font-size: 1.5rem;
+  }
+  #tip-percent-input:-ms-input-placeholder {
+    font-size: 1.5rem;
+  }
+  #tip-percent-input::placeholder {
+    font-size: 1.5rem;
+  }
+}
+body {
+  font-family: "Space Mono", monospace;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(185deg, 41%, 84%);
+  font-size: 24px;
 }/*# sourceMappingURL=styles.css.map */
