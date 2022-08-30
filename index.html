@@ -53,10 +53,13 @@
           </div>
         </div>            
       </div>
-      <div>
-        <label for="num-ppl-input" class="form-label input-label">Number of People</label>
-        <div class="input-group">              
-          <input type="money" class="form-control text-end fs-2" id="num-ppl-input" placeholder="0">
+      <div>          
+        <label for="num-ppl-input" class="form-label input-label">
+          Number of People   
+          <span class="invalid-value-mess float-end">Can't be zero</span>       
+        </label>              
+        <div class="input-group">                      
+          <input type="number" class="form-control text-end fs-2" id="num-ppl-input" placeholder="0">
         </div>
       </div>  
     </div>         

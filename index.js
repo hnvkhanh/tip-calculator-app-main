@@ -1,4 +1,4 @@
-var selected_tip = null;
+var selected_tip = 0;
 var num_of_ppl = 0;
 var bill = 0;
 
@@ -15,6 +15,23 @@ for (var i=0; i < 5; i++){
 document.querySelector("#tip-percent-input").addEventListener("input", function(){        
     unselected_tip();
     selected_tip = this.value; 
+});
+
+document.querySelector("#num-ppl-input").addEventListener("input", function(){
+    if (this.value <= 0){
+        if (this.value == 0){
+            document.querySelector(".invalid-value-mess").innerHTML = "Can't be zero";
+        }
+        else{
+            document.querySelector(".invalid-value-mess").innerHTML = "Invalid value";
+        }
+        this.style.setProperty('border-color', 'hsl(0, 100%, 66%)');
+        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 100%, 66%)";
+    }  
+    else{
+        this.style.setProperty('border-color', 'hsl(172, 67%, 45%)');
+        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 0%, 100%)";
+    }  
 });
 
 function unselected_tip(){
