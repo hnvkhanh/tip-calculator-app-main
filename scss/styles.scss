@@ -10,4 +10,9 @@ body{
     font-size: $font-size;
 }
 
-
+.selected{
+    background-color: $Strong-cyan;
+    color: $Very-dark-cyan;
+    box-shadow: none;
+    border-color: $Strong-cyan;
+}
