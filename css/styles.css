@@ -88,10 +88,10 @@
 
 .unit {
   color: hsl(184deg, 14%, 56%);
-  margin-top: -8%;
+  margin-top: -5%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .calculator {
     max-width: 60%;
     margin-bottom: 15%;
@@ -108,7 +108,10 @@
     font-size: 2.5rem;
   }
   .result .btn {
-    margin-top: 22%;
+    margin-top: 17%;
+  }
+  #tip-percent-input {
+    height: 85%;
   }
   #tip-percent-input::-moz-placeholder {
     font-size: 1.4rem;

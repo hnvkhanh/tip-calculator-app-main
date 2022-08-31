@@ -1,4 +1,4 @@
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .calculator{
         max-width: 60%;   
         margin-bottom: 15%;     
@@ -12,8 +12,7 @@
             background-color: $Light-grayish-cyan;
             color: $Very-dark-cyan;
             border: $Light-grayish-cyan;                 
-        }
-        
+        }        
     }
 
     .result{                             
@@ -25,14 +24,16 @@
            
         }
         & .btn{           
-          margin-top: 22%;
+          margin-top: 17%;
           
-        }
-            
-        
+        }                    
     }
     
-    #tip-percent-input::placeholder{
-        font-size: 1.4rem;
+    #tip-percent-input{                  
+        height: 85%;
+        &::placeholder{
+            font-size: 1.4rem;
+        }
     }
+    
 }
