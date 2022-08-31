@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [here](https://www.frontendmentor.io/solutions/tip-calculator-app-with-bootstrap-scss-lfV_3Gyc6y)
+- Live Site URL: [here](https://hnvkhanh.github.io/tip-calculator-app-main/)
 
 ## My process
 
