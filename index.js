@@ -1,5 +1,5 @@
-var selected_tip = null;
-var num_of_ppl = null;
+var selected_tip = 0;
+var num_of_ppl = 0;
 var bill = 0;
 
 select_tip_btn = document.querySelectorAll("#select-tip");
@@ -30,23 +30,24 @@ document.querySelector("#bill-input").addEventListener("input", function(){
 });
 
 document.querySelector("#num-ppl-input").addEventListener("input", function(){
-    reset_btn.disabled = false;   
-    update_result() 
+    reset_btn.disabled = false;        
     if (this.value == 0){        
         this.style.setProperty('border-color', 'hsl(0, 100%, 66%)');
-        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 100%, 66%)";
-        num_of_ppl = null;
+        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 100%, 66%)";        
     }  
     else{
         this.style.setProperty('border-color', 'hsl(172, 67%, 45%)');
-        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 0%, 100%)";
-        num_of_ppl = this.value;
+        document.querySelector(".invalid-value-mess").style.color = "hsl(0, 0%, 100%)";        
     }  
+    num_of_ppl = this.value;
+    update_result();
 });
 
 reset_btn.addEventListener("click", function(){
     location.reload();
-})
+});
+
+
 
 function unselected_tip(){
     var selected_tip_btn = document.querySelector(".selected");
@@ -56,12 +57,13 @@ function unselected_tip(){
 }
 
 function calc_tip(){
-    return bill*(selected_tip/100);
+    return bill*(selected_tip/100)/num_of_ppl;
 }
 
 function update_result(){
-    tip_amount = calc_tip();
-    document.querySelector("#tip-amount").innerHTML = "$" + tip_amount;
-    document.querySelector("#total").innerHTML = "$" + tip_amount/num_of_ppl;
+    tip_amount = calc_tip();    
+    document.querySelector("#tip-amount").innerHTML = "$" + tip_amount.toFixed(2);
+    document.querySelector("#total").innerHTML = "$" + (bill/num_of_ppl + tip_amount).toFixed(2);    
+    
 }
 
